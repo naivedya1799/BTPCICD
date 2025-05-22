@@ -1,8 +1,11 @@
 {
-  "name": "BTPCICD",
+  "name": "btpcicd",
   "version": "1.0.0",
   "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
+  "repository": {
+    "type": "git",
+    "url": "<Add your repository here>"
+  },
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
@@ -16,11 +19,17 @@
     "@sap/cds-dk": "^8"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "test ": "echo \"Error: no test specified\" && exit 1"
   },
   "cds": {
     "requires": {
       "auth": "xsuaa"
     }
-  }
+  },
+  "main": "index.js",
+  "keywords": [
+    "."
+  ],
+  "author": "Naivedya"
 }
